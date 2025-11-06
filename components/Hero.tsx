@@ -1,5 +1,6 @@
 
 import React from 'react';
+import ruidiaoPng from '../ruidiao.png';
 
 const Hero: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Hero: React.FC = () => {
       
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         <img
-          src="https://picsum.photos/seed/ruidiao/200"
+          src={ruidiaoPng}
           alt="Rui Diao"
           className="h-32 w-32 rounded-full ring-4 ring-gray-700 object-cover"
         />

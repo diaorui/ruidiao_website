@@ -24,7 +24,7 @@ const App: React.FC = () => {
                 After a decade as a Senior Staff Software Engineer at Google, where my work revolved around optimization and building complex, centralized systems, I've embarked on a new journey. I'm now an indie creator, driven by a desire to build a life focused on freedom, curiosity, and craft.
               </p>
               <p>
-                This transition was born from a realization that the skills of the future—curiosity, empathy, and the courage to start from a blank page—were the ones I wanted to cultivate. My focus has shifted from being a cog in a magnificent machine to becoming the architect of my own.
+                This transition was born from a realization that the skills of the future (curiosity, empathy, and the courage to start from a blank page) were the ones I wanted to cultivate. My focus has shifted from being a cog in a magnificent machine to becoming the architect of my own.
               </p>
               <p>
                 My goal isn't to build the next big startup, but to explore ideas that genuinely excite me and to share that journey publicly. It's about finding the signal in the noise and reconnecting with the pure joy of creation.

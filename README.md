@@ -1,20 +1,21 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Rui Diao's Personal Website
 
-# Run and deploy your AI Studio app
+This is the source code for my personal website, built to share my journey as an indie creator after a decade at Google. The website showcases my writings, projects, and thoughts on technology and life.
 
-This contains everything you need to run your app locally.
+## About Me
 
-View your app in AI Studio: https://ai.studio/apps/drive/1GhxnHJKM2o3jG-KHlqxEG_vfWMc2mEH5
+After a decade as a Senior Staff Software Engineer at Google, I'm now an indie creator focused on building a life centered around freedom, curiosity, and craft. This website is a living document of that journey.
 
-## Run Locally
+## Social Links
 
-**Prerequisites:**  Node.js
+*   **X:** [https://x.com/ruidiaox](https://x.com/ruidiaox)
+*   **LinkedIn:** [https://linkedin.com/in/ruidiao](https://linkedin.com/in/ruidiao)
+*   **Substack:** [https://ruidiao.substack.com](https://ruidiao.substack.com)
 
+## Acknowledgements
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+This website was initially created with the help of Gemini, and I've since updated it.
+
+## Contributing
+
+This is a personal project, so I'm not currently accepting contributions. However, feel free to fork the repository and use it as inspiration for your own site.
