@@ -5,9 +5,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: '/ruidiao_website/',
+      base: '/',
       build: {
         outDir: 'docs',
+        emptyOutDir: false,
       },
       server: {
         port: 3000,
