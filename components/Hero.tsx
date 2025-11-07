@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
           Rui Diao
         </h1>
         <p className="mt-4 max-w-2xl text-xl text-cyan-300">
-          Building a software life driven by curiosity.
+          Building a <strike>software</strike> life driven by curiosity.
         </p>
         <p className="mt-2 text-md text-gray-400">
           Indie Creator • Ex-Google Senior Staff Software Engineer

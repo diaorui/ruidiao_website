@@ -8,7 +8,6 @@ export default defineConfig(({ mode }) => {
       base: '/',
       build: {
         outDir: 'docs',
-        emptyOutDir: false,
       },
       server: {
         port: 3000,
