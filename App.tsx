@@ -16,8 +16,8 @@ const App: React.FC = () => {
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 pb-20">
           <Section title="About Me">
-            <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
-              <p>
+            <div className="space-y-4 text-gray-300 text-lg leading-relaxed" itemScope itemType="https://schema.org/AboutPage">
+              <p itemProp="description">
                 After a decade as a Senior Staff Software Engineer at Google, where my work revolved around optimization and building complex, centralized systems, I've embarked on a new journey. I'm now an indie creator, driven by a desire to build a life focused on freedom, curiosity, and craft.
               </p>
               <p>

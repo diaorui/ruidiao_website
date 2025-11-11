@@ -11,9 +11,15 @@ const LinkIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
-    <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700/50 transition-all duration-300">
-      <h3 className="text-2xl font-bold text-gray-100">{project.title}</h3>
-      <p className="mt-3 text-gray-300 leading-relaxed">{project.description}</p>
+    <article
+      className="p-6 bg-gray-800/50 rounded-lg border border-gray-700/50 transition-all duration-300"
+      itemScope
+      itemType="https://schema.org/SoftwareApplication"
+    >
+      <h3 className="text-2xl font-bold text-gray-100" itemProp="name">{project.title}</h3>
+      <p className="mt-3 text-gray-300 leading-relaxed" itemProp="description">{project.description}</p>
+      <meta itemProp="url" content={project.liveUrl} />
+      <meta itemProp="author" content="Rui Diao" />
       
       <div className="mt-4 flex flex-wrap gap-2">
         {project.tech.map((tech) => (
@@ -22,13 +28,14 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           </span>
         ))}
       </div>
-      
+
       <div className="mt-6 flex items-center space-x-4">
-        <a 
+        <a
           href={project.liveUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 focus:ring-offset-gray-900"
+          itemProp="url"
         >
           Try It
           <LinkIcon className="ml-2 -mr-1 h-4 w-4" />
@@ -44,7 +51,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           </a>
         )}
       </div>
-    </div>
+    </article>
   );
 };
 
