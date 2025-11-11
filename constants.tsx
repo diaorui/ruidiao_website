@@ -40,9 +40,9 @@ export const ARTICLES: Article[] = [
     url: 'https://ruidiao.substack.com/p/why-i-left-google',
   },
   {
-    title: 'I Built a Serverless AI Search Engine',
-    description: 'The story of building a search engine for 400,000+ quotes in a day, what it reveals about Web AI, and the future of local-first applications.',
-    url: 'https://ruidiao.substack.com/p/i-built-a-serverless-ai-search-engine',
+    title: "The AI War Isn't About the Bombs. It's About the Railroads.",
+    description: "Why AI supremacy won't be won by the best model, but by who controls the data, chips, and distribution. Google's decade of infrastructure investments might be unbeatable.",
+    url: 'https://ruidiao.substack.com/p/the-ai-war-isnt-about-the-bombs-its',
   },
 ];
 
@@ -53,5 +53,12 @@ export const PROJECTS: Project[] = [
     tech: ['Web AI', 'Transformers.js', 'React', 'Tailwind CSS'],
     liveUrl: 'https://huggingface.co/spaces/ruidiao/QuoteSearch',
     blogUrl: 'https://ruidiao.substack.com/p/i-built-a-serverless-ai-search-engine',
+  },
+  {
+    title: 'NanoCoffee',
+    description: 'A Chrome extension that brings AI-powered features to social media. All processing happens on your device with no backend servers required.',
+    tech: ['Chrome Extension', 'Gemini Nano', 'On-device AI', 'JavaScript'],
+    liveUrl: 'https://chromewebstore.google.com/detail/nanocoffee/imociajlipjlmiglmjkpkjmkkfbblmhk',
+    blogUrl: 'https://ruidiao.substack.com/p/i-built-an-ai-chrome-extension-in',
   },
 ];

@@ -30,7 +30,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           rel="noopener noreferrer"
           className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 focus:ring-offset-gray-900"
         >
-          Live Demo
+          Try It
           <LinkIcon className="ml-2 -mr-1 h-4 w-4" />
         </a>
         {project.blogUrl && (

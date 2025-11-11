@@ -1,6 +1,5 @@
 
 import React from 'react';
-import Header from './components/Header';
 import Hero from './components/Hero';
 import Section from './components/Section';
 import ArticleCard from './components/ArticleCard';
@@ -12,10 +11,8 @@ import type { Article, Project, SocialLink } from './types';
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-900 font-sans">
-      <Header socialLinks={SOCIAL_LINKS} />
-      
-      <main className="pt-16">
-        <Hero />
+      <main>
+        <Hero socialLinks={SOCIAL_LINKS} />
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 pb-20">
           <Section title="About Me">
