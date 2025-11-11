@@ -6,6 +6,10 @@ This is the source code for my personal website, built to share my journey as an
 
 After a decade as a Senior Staff Software Engineer at Google, I'm now an indie creator focused on building a life centered around freedom, curiosity, and craft. This website is a living document of that journey.
 
+## Deployment
+
+This site is deployed to [ruidiao.dev](https://ruidiao.dev)
+
 ## Social Links
 
 *   **X:** [https://x.com/ruidiaox](https://x.com/ruidiaox)
