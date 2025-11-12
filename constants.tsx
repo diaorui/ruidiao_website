@@ -28,9 +28,9 @@ const LinkIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 );
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { name: 'X', url: 'https://x.com/ruidiaox', icon: <XIcon className="h-5 w-5" /> },
-  { name: 'LinkedIn', url: 'https://linkedin.com/in/ruidiao', icon: <LinkedInIcon className="h-5 w-5" /> },
-  { name: 'Substack', url: 'https://ruidiao.substack.com', icon: <SubstackIcon className="h-5 w-5" /> },
+  { name: 'X', url: 'https://x.com/ruidiaox', icon: <XIcon className="h-9 w-9" /> },
+  { name: 'LinkedIn', url: 'https://linkedin.com/in/ruidiao', icon: <LinkedInIcon className="h-9 w-9" /> },
+  { name: 'Substack', url: 'https://ruidiao.substack.com', icon: <SubstackIcon className="h-9 w-9" /> },
 ];
 
 export const ARTICLES: Article[] = [
