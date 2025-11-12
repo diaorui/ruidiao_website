@@ -43,7 +43,7 @@ The analytics script is automatically loaded by the `GoogleAnalytics` component 
 
 ## Acknowledgements
 
-This website was initially created with the help of Gemini, and I've since updated it.
+This website was developed with the help of Gemini and Claude.
 
 ## Contributing
 
