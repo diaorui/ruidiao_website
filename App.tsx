@@ -5,12 +5,14 @@ import Section from './components/Section';
 import ArticleCard from './components/ArticleCard';
 import ProjectCard from './components/ProjectCard';
 import Footer from './components/Footer';
+import { GoogleAnalytics } from './components/GoogleAnalytics';
 import { ARTICLES, PROJECTS, SOCIAL_LINKS } from './constants';
 import type { Article, Project, SocialLink } from './types';
 
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-900 font-sans">
+      <GoogleAnalytics />
       <main>
         <Hero socialLinks={SOCIAL_LINKS} />
         
