@@ -37,12 +37,12 @@ export const ARTICLES: Article[] = [
   {
     title: 'Why I Left Google',
     description: 'Building a Life, Not Just Software. My personal story on transitioning from a decade at Google to a new chapter focused on freedom, curiosity, and craft.',
-    url: 'https://ruidiao.substack.com/p/why-i-left-google',
+    url: 'https://ruidiao.substack.com/p/why-i-left-google?r=j5yr6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
   },
   {
     title: "The AI War Isn't About the Bombs. It's About the Railroads.",
     description: "Why AI supremacy won't be won by the best model, but by who controls the data, chips, and distribution. Google's decade of infrastructure investments might be unbeatable.",
-    url: 'https://ruidiao.substack.com/p/the-ai-war-isnt-about-the-bombs-its',
+    url: 'https://ruidiao.substack.com/p/the-ai-war-isnt-about-the-bombs-its?r=j5yr6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
   },
 ];
 
@@ -52,13 +52,13 @@ export const PROJECTS: Project[] = [
     description: 'A serverless, private, semantic search engine for over 400,000 quotes. It runs entirely in your browser using Transformers.js, demonstrating the power and privacy of on-device AI.',
     tech: ['Web AI', 'Transformers.js', 'React', 'Tailwind CSS'],
     liveUrl: 'https://huggingface.co/spaces/ruidiao/QuoteSearch',
-    blogUrl: 'https://ruidiao.substack.com/p/i-built-a-serverless-ai-search-engine',
+    blogUrl: 'https://ruidiao.substack.com/p/i-built-a-serverless-ai-search-engine?r=j5yr6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
   },
   {
     title: 'NanoCoffee',
     description: 'A Chrome extension that brings AI-powered features to social media. All processing happens on your device with no backend servers required.',
     tech: ['Chrome Extension', 'Gemini Nano', 'On-device AI', 'JavaScript'],
     liveUrl: 'https://chromewebstore.google.com/detail/nanocoffee/imociajlipjlmiglmjkpkjmkkfbblmhk',
-    blogUrl: 'https://ruidiao.substack.com/p/i-built-an-ai-chrome-extension-in',
+    blogUrl: 'https://open.substack.com/pub/ruidiao/p/i-built-an-ai-chrome-extension-in?r=j5yr6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
   },
 ];
