@@ -59,6 +59,6 @@ export const PROJECTS: Project[] = [
     description: 'A Chrome extension that brings AI-powered features to social media. All processing happens on your device with no backend servers required.',
     tech: ['Chrome Extension', 'Gemini Nano', 'On-device AI', 'JavaScript'],
     liveUrl: 'https://chromewebstore.google.com/detail/nanocoffee/imociajlipjlmiglmjkpkjmkkfbblmhk',
-    blogUrl: 'https://open.substack.com/pub/ruidiao/p/i-built-an-ai-chrome-extension-in?r=j5yr6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
+    websiteUrl: 'https://nanocoffee.ruidiao.dev',
   },
 ];

@@ -30,15 +30,31 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
       </div>
 
       <div className="mt-6 flex items-center space-x-4">
+        {project.websiteUrl && (
+          <a
+            href={project.websiteUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 focus:ring-offset-gray-900"
+            itemProp="url"
+          >
+            Website
+            <LinkIcon className="ml-2 -mr-1 h-4 w-4" />
+          </a>
+        )}
         <a
           href={project.liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 focus:ring-offset-gray-900"
-          itemProp="url"
+          className={`inline-flex items-center ${
+            project.websiteUrl
+              ? 'text-sm font-medium text-gray-300 hover:text-cyan-400'
+              : 'px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 focus:ring-offset-gray-900'
+          }`}
+          itemProp={!project.websiteUrl ? "url" : undefined}
         >
-          Try It
-          <LinkIcon className="ml-2 -mr-1 h-4 w-4" />
+          {project.websiteUrl ? 'Chrome Store' : 'Try It'}
+          {!project.websiteUrl && <LinkIcon className="ml-2 -mr-1 h-4 w-4" />}
         </a>
         {project.blogUrl && (
           <a

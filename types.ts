@@ -18,5 +18,6 @@ export interface Project {
   description: string;
   tech: string[];
   liveUrl: string;
+  websiteUrl?: string;
   blogUrl?: string;
 }
