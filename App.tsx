@@ -16,7 +16,7 @@ const App: React.FC = () => {
       <main>
         <Hero socialLinks={SOCIAL_LINKS} />
         
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 pb-20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-12">
           <Section title="About Me">
             <div className="space-y-4 text-gray-300 text-lg leading-relaxed" itemScope itemType="https://schema.org/AboutPage">
               <p itemProp="description">
@@ -32,15 +32,15 @@ const App: React.FC = () => {
           </Section>
 
           <Section title="Writings">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {ARTICLES.map((article: Article) => (
                 <ArticleCard key={article.title} article={article} />
               ))}
             </div>
           </Section>
-          
+
           <Section title="Projects">
-            <div className="space-y-8">
+            <div className="space-y-6">
               {PROJECTS.map((project: Project) => (
                 <ProjectCard key={project.title} project={project} />
               ))}

@@ -9,7 +9,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ socialLinks }) => {
   return (
-    <div className="relative pt-24 pb-20 sm:pt-32 sm:pb-28 text-center bg-gray-800 overflow-hidden">
+    <div className="relative pt-16 pb-12 sm:pt-20 sm:pb-16 text-center bg-gray-800 overflow-hidden">
       <div className="absolute inset-0 bg-cover bg-center opacity-10" style={{ backgroundImage: "url('https://picsum.photos/seed/tech/1200/400')" }}></div>
       <div className="absolute inset-0 bg-gradient-to-b from-gray-900 via-gray-900/80 to-gray-900"></div>
       
@@ -19,17 +19,17 @@ const Hero: React.FC<HeroProps> = ({ socialLinks }) => {
           alt="Rui Diao"
           className="h-32 w-32 rounded-full ring-4 ring-gray-700 object-cover"
         />
-        <h1 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
+        <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
           Rui Diao
         </h1>
-        <p className="mt-4 max-w-2xl text-lg sm:text-xl text-cyan-300">
+        <p className="mt-3 max-w-2xl text-lg sm:text-xl text-cyan-300">
           Building a <strike>software</strike> life driven by curiosity.
         </p>
         <p className="mt-2 text-sm sm:text-md text-gray-400">
           Indie Creator • Ex-Google Senior Staff Software Engineer
         </p>
 
-        <div className="flex items-center justify-center space-x-6 mt-8">
+        <div className="flex items-center justify-center space-x-6 mt-6">
           {socialLinks.map((link) => (
             <a
               key={link.name}
