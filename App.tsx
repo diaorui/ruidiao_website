@@ -2,6 +2,7 @@
 import React from 'react';
 import Hero from './components/Hero';
 import Section from './components/Section';
+import AboutMe from './components/AboutMe';
 import ArticleCard from './components/ArticleCard';
 import ProjectCard from './components/ProjectCard';
 import Footer from './components/Footer';
@@ -18,17 +19,7 @@ const App: React.FC = () => {
         
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-12">
           <Section title="About Me">
-            <div className="space-y-4 text-gray-300 text-lg leading-relaxed" itemScope itemType="https://schema.org/AboutPage">
-              <p itemProp="description">
-                After a decade as a Senior Staff Software Engineer at Google, where my work revolved around optimization and building complex, centralized systems, I've embarked on a new journey. I'm now an indie creator, driven by a desire to build a life focused on freedom, curiosity, and craft.
-              </p>
-              <p>
-                This transition was born from a realization that the skills of the future (curiosity, empathy, and the courage to start from a blank page) were the ones I wanted to cultivate. My focus has shifted from being a cog in a magnificent machine to becoming the architect of my own.
-              </p>
-              <p>
-                My goal isn't to build the next big startup, but to explore ideas that genuinely excite me and to share that journey publicly. It's about finding the signal in the noise and reconnecting with the pure joy of creation.
-              </p>
-            </div>
+            <AboutMe />
           </Section>
 
           <Section title="Writings">
