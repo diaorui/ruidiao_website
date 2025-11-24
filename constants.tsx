@@ -48,17 +48,30 @@ export const ARTICLES: Article[] = [
 
 export const PROJECTS: Project[] = [
   {
-    title: 'QuoteSearch',
-    description: 'A serverless, private, semantic search engine for over 400,000 quotes. It runs entirely in your browser using Transformers.js, demonstrating the power and privacy of on-device AI.',
-    tech: ['Web AI', 'Transformers.js', 'React', 'Tailwind CSS'],
-    liveUrl: 'https://huggingface.co/spaces/ruidiao/QuoteSearch',
-    blogUrl: 'https://ruidiao.substack.com/p/i-built-a-serverless-ai-search-engine?r=j5yr6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true',
+    title: 'PeekDeck',
+    description: 'A flexible dashboard generator that transforms YAML configurations into beautiful, static HTML dashboards. Monitor crypto prices, AI news, and more.',
+    tech: ['Python', 'Jinja2', 'GitHub Actions', 'YAML'],
+    primaryLink: { url: 'https://peekdeck.ruidiao.dev', label: 'View Dashboard' },
+    links: [
+      { url: 'https://github.com/diaorui/peek-deck', label: 'GitHub' },
+    ],
   },
   {
     title: 'NanoCoffee',
     description: 'A Chrome extension that brings AI-powered features to social media. All processing happens on your device with no backend servers required.',
     tech: ['Chrome Extension', 'Gemini Nano', 'On-device AI', 'JavaScript'],
-    liveUrl: 'https://chromewebstore.google.com/detail/nanocoffee/imociajlipjlmiglmjkpkjmkkfbblmhk',
-    websiteUrl: 'https://nanocoffee.ruidiao.dev',
+    primaryLink: { url: 'https://nanocoffee.ruidiao.dev', label: 'Website' },
+    links: [
+      { url: 'https://chromewebstore.google.com/detail/nanocoffee/imociajlipjlmiglmjkpkjmkkfbblmhk', label: 'Chrome Store' },
+    ],
+  },
+  {
+    title: 'QuoteSearch',
+    description: 'A serverless, private, semantic search engine for over 400,000 quotes. It runs entirely in your browser using Transformers.js, demonstrating the power and privacy of on-device AI.',
+    tech: ['Web AI', 'Transformers.js', 'React', 'Tailwind CSS'],
+    primaryLink: { url: 'https://huggingface.co/spaces/ruidiao/QuoteSearch', label: 'Try It' },
+    links: [
+      { url: 'https://ruidiao.substack.com/p/i-built-a-serverless-ai-search-engine?r=j5yr6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true', label: 'Read the Story' },
+    ],
   },
 ];

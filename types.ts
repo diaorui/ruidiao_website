@@ -17,7 +17,12 @@ export interface Project {
   title: string;
   description: string;
   tech: string[];
-  liveUrl: string;
-  websiteUrl?: string;
-  blogUrl?: string;
+  primaryLink: {
+    url: string;
+    label: string;
+  };
+  links?: Array<{
+    url: string;
+    label: string;
+  }>;
 }
