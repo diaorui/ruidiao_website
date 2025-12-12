@@ -29,12 +29,12 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
         ))}
       </div>
 
-      <div className="mt-6 flex items-center space-x-4">
+      <div className="mt-6 flex flex-wrap items-center gap-3">
         <a
           href={project.primaryLink.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 focus:ring-offset-gray-900"
+          className="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500 focus:ring-offset-gray-900"
           itemProp="url"
         >
           {project.primaryLink.label}
@@ -46,9 +46,10 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center text-sm font-medium text-gray-300 hover:text-cyan-400"
+            className="inline-flex items-center justify-center px-3 py-2 border border-gray-600 text-sm font-medium rounded-md text-gray-300 hover:text-cyan-400 hover:border-cyan-500 transition-colors duration-200"
           >
             {link.label}
+            <LinkIcon className="ml-1.5 -mr-0.5 h-3.5 w-3.5" />
           </a>
         ))}
       </div>
