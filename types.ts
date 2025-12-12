@@ -15,7 +15,7 @@ export interface Article {
 
 export interface Project {
   title: string;
-  description: string;
+  description: string | React.ReactNode;
   tech: string[];
   primaryLink: {
     url: string;

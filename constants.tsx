@@ -57,6 +57,20 @@ export const PROJECTS: Project[] = [
     ],
   },
   {
+    title: 'EventSync',
+    description: (
+      <>
+        Automatically syncs local <a href="https://lu.ma" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Luma</a> events to Google Calendar based on location and category. Select a region on a map, choose event categories (AI, Tech, Arts, etc.), and get a dedicated calendar that updates regularly.
+      </>
+    ),
+    tech: ['Google Apps Script', 'Google Sheets', 'OAuth 2.0', 'Static HTML'],
+    primaryLink: { url: 'https://eventsync.ruidiao.dev', label: 'Create Calendar' },
+    links: [
+      { url: 'https://github.com/diaorui/event-sync', label: 'GitHub' },
+      { url: 'https://calendar.google.com/calendar/u/0?cid=OWRiNDRjYTA0NGUwM2JjOTA2ZGQ3YzVmMWIwY2Y4MTRmNjliMDc4MGY2Mzc2M2I4ODEwZGIwNjdkY2VjNGM4YkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t', label: 'Example: SV AI Events' },
+    ],
+  },
+  {
     title: 'NanoCoffee',
     description: 'A Chrome extension that brings AI-powered features to social media. All processing happens on your device with no backend servers required.',
     tech: ['Chrome Extension', 'Gemini Nano', 'On-device AI', 'JavaScript'],
