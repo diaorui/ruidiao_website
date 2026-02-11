@@ -67,19 +67,292 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-      /* Custom scrollbar for a more refined look */
+      @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Mali:wght@400;600;700&display=swap');
+
+      :root {
+        /* Ghibli Color Palette */
+        --bg-sky-top: #A0D8EF;
+        --bg-sky-bottom: #DEF4FA;
+        --bg-grass: #4A8535;
+        --bg-grass-dark: #2E5A1C;
+
+        /* UI Elements (Wood & Parchment) */
+        --card-bg: #FDF6E3;
+        --card-border: #8B5A2B;
+        --text-main: #423224;
+        --text-light: #6B5544;
+        --accent-green: #76C168;
+        --accent-blue: #5FACD3;
+        --accent-orange: #FF9800;
+
+        /* Hand-drawn border radius - creates organic, wobbly shapes */
+        --wobbly-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        --wobbly-radius-sm: 155px 15px 155px 15px / 15px 155px 15px 155px;
+      }
+
+      body {
+        font-family: 'Mali', cursive;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Patrick Hand', cursive;
+      }
+
+      /* Custom scrollbar for storybook theme */
+
       ::-webkit-scrollbar {
-        width: 8px;
+        width: 12px;
       }
+
       ::-webkit-scrollbar-track {
-        background: #1a202c; /* dark-900 */
+        background: var(--card-bg);
+        border-left: 3px solid var(--card-border);
       }
+
       ::-webkit-scrollbar-thumb {
-        background: #4a5568; /* gray-700 */
-        border-radius: 4px;
+        background: var(--card-border);
+        border-radius: 10px;
+        border: 2px solid var(--card-bg);
       }
+
       ::-webkit-scrollbar-thumb:hover {
-        background: #718096; /* gray-600 */
+        background: var(--text-main);
+      }
+
+      /* Parchment texture - creates aged paper feel */
+
+      .parchment {
+        background-color: var(--card-bg);
+        background-image:
+          repeating-linear-gradient(
+            45deg,
+            rgba(139, 90, 43, 0.03) 0px,
+            rgba(139, 90, 43, 0.03) 1px,
+            transparent 1px,
+            transparent 6px
+          ),
+          repeating-linear-gradient(
+            -45deg,
+            rgba(139, 90, 43, 0.02) 0px,
+            rgba(139, 90, 43, 0.02) 1px,
+            transparent 1px,
+            transparent 8px
+          );
+      }
+
+      /* Wood-grain texture pattern */
+
+      .wood-grain {
+        background-color: var(--card-bg);
+        background-image:
+          repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 2px,
+            rgba(139, 90, 43, 0.05) 2px,
+            rgba(139, 90, 43, 0.05) 4px
+          ),
+          repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 20px,
+            rgba(139, 90, 43, 0.03) 20px,
+            rgba(139, 90, 43, 0.03) 40px
+          );
+      }
+
+      /* Hand-drawn card style */
+
+      .hand-drawn-card {
+        border: 3px solid var(--card-border);
+        border-radius: var(--wobbly-radius);
+        box-shadow:
+          5px 5px 0px rgba(66, 50, 36, 0.2),
+          inset 0 0 20px rgba(139, 90, 43, 0.05);
+        transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1.5);
+      }
+
+      .hand-drawn-card:hover {
+        transform: translateY(-2px) rotate(-0.5deg);
+        box-shadow:
+          7px 7px 0px rgba(66, 50, 36, 0.25),
+          inset 0 0 20px rgba(139, 90, 43, 0.08);
+      }
+
+      /* Hand-drawn button style */
+
+      .hand-drawn-btn {
+        border: 2px solid var(--bg-grass-dark);
+        border-radius: var(--wobbly-radius-sm);
+        transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1.5);
+        box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.15);
+      }
+
+      .hand-drawn-btn:hover {
+        transform: scale(1.05) rotate(-2deg);
+        box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Sky gradient background - soft cream transition instead of harsh green */
+
+      .sky-background {
+        background: linear-gradient(to bottom,
+          var(--bg-sky-top) 0%,
+          var(--bg-sky-bottom) 60%,
+          #F5E6D3 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+
+      /* Cloud animation */
+
+      @keyframes float-cloud {
+        0% { transform: translateX(-150px); }
+        100% { transform: translateX(calc(100vw + 150px)); }
+      }
+
+      .cloud {
+        position: absolute;
+        background: white;
+        border-radius: 50px;
+        opacity: 0.85;
+        filter: blur(0.5px);
+        box-shadow: inset 0 -5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .cloud::before,
+      .cloud::after {
+        content: '';
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+        box-shadow: inset 0 -5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .cloud-1 {
+        width: 140px;
+        height: 50px;
+        top: 8%;
+        animation: float-cloud 70s linear infinite;
+      }
+
+      .cloud-1::before {
+        width: 60px;
+        height: 60px;
+        top: -30px;
+        left: 25px;
+      }
+
+      .cloud-1::after {
+        width: 70px;
+        height: 70px;
+        top: -35px;
+        right: 25px;
+      }
+
+      .cloud-2 {
+        width: 110px;
+        height: 40px;
+        top: 18%;
+        animation: float-cloud 90s linear infinite;
+        animation-delay: -25s;
+      }
+
+      .cloud-2::before {
+        width: 45px;
+        height: 45px;
+        top: -22px;
+        left: 18px;
+      }
+
+      .cloud-2::after {
+        width: 55px;
+        height: 55px;
+        top: -28px;
+        right: 18px;
+      }
+
+      .cloud-3 {
+        width: 90px;
+        height: 35px;
+        top: 3%;
+        animation: float-cloud 80s linear infinite;
+        animation-delay: -50s;
+      }
+
+      .cloud-3::before {
+        width: 40px;
+        height: 40px;
+        top: -20px;
+        left: 12px;
+      }
+
+      .cloud-3::after {
+        width: 45px;
+        height: 45px;
+        top: -22px;
+        right: 12px;
+      }
+
+      /* Forest/tree silhouette at bottom - softer tones */
+
+      .forest-silhouette {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 150px;
+        background: linear-gradient(to top, rgba(74, 133, 53, 0.3) 0%, transparent 100%);
+        pointer-events: none;
+      }
+
+      .forest-silhouette::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 120px;
+        background-image:
+          radial-gradient(ellipse 70px 140px at 5% 100%, rgba(118, 193, 104, 0.2) 0%, transparent 100%),
+          radial-gradient(ellipse 90px 170px at 20% 100%, rgba(118, 193, 104, 0.25) 0%, transparent 100%),
+          radial-gradient(ellipse 60px 120px at 35% 100%, rgba(118, 193, 104, 0.2) 0%, transparent 100%),
+          radial-gradient(ellipse 100px 200px at 50% 100%, rgba(118, 193, 104, 0.3) 0%, transparent 100%),
+          radial-gradient(ellipse 70px 140px at 65% 100%, rgba(118, 193, 104, 0.2) 0%, transparent 100%),
+          radial-gradient(ellipse 85px 160px at 80% 100%, rgba(118, 193, 104, 0.25) 0%, transparent 100%),
+          radial-gradient(ellipse 60px 120px at 95% 100%, rgba(118, 193, 104, 0.2) 0%, transparent 100%);
+      }
+
+      /* House-shaped container removed */
+
+      /* Lantern icon removed */
+
+      /* Leaf decorations removed */
+
+      /* Tag badges with wobbly shape */
+
+      .wobbly-tag {
+        border-radius: 155px 15px 155px 15px / 15px 155px 15px 155px;
+        border: 2px solid var(--card-border);
+      }
+
+      /* Text shadow for headings - subtle highlight */
+
+      .text-glow {
+        text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3);
+      }
+
+      /* Improved text readability */
+
+      .text-readable {
+        line-height: 1.7;
+        letter-spacing: 0.01em;
+      }
+
+      .heading-readable {
+        line-height: 1.3;
+        letter-spacing: 0.02em;
       }
     </style>
 
@@ -92,9 +365,15 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/assets/index-C9y34v8n.js"></script>
+  <script type="module" crossorigin src="/assets/index-CBaWk1ye.js"></script>
 </head>
-  <body class="bg-gray-900 text-gray-200 antialiased">
+  <body class="bg-[#F5E6D3] text-[#5D4037] antialiased">
+    <div class="sky-background fixed inset-0 -z-10">
+      <div class="cloud cloud-1"></div>
+      <div class="cloud cloud-2"></div>
+      <div class="cloud cloud-3"></div>
+      <div class="forest-silhouette"></div>
+    </div>
     <div id="root"></div>
   </body>
 </html>

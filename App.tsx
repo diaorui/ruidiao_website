@@ -12,17 +12,17 @@ import type { Article, Project, SocialLink } from './types';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-900 font-sans">
+    <div className="min-h-screen relative">
       <GoogleAnalytics />
-      <main>
+      <main className="relative z-10">
         <Hero socialLinks={SOCIAL_LINKS} />
-        
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-12">
+
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-12 pt-8">
           <Section title="About Me">
             <AboutMe />
           </Section>
 
-          <Section title="Writings">
+          <Section title="Writings" isWritings={true}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {ARTICLES.map((article: Article) => (
                 <ArticleCard key={article.title} article={article} />
