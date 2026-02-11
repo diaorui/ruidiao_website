@@ -1,6 +1,6 @@
 
 import React from 'react';
-import ruidiaoPng from '../ruidiao.png';
+import ruidiaoPng from '../ruidiao-ghibli.png';
 import type { SocialLink } from '../types';
 
 interface HeroProps {
