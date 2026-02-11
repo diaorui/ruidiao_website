@@ -8,19 +8,25 @@ interface HeroProps {
 }
 
 const Hero: React.FC<HeroProps> = ({ socialLinks }) => {
+  const webpImage = new URL('../ruidiao-ghibli.webp', import.meta.url).href;
+  const pngImage = new URL('../ruidiao-ghibli.png', import.meta.url).href;
+
   return (
     <div className="relative pt-16 pb-12 sm:pt-20 sm:pb-16 text-center">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center">
         <div className="relative">
-          <img
-            src={ruidiaoPng}
-            alt="Rui Diao"
-            className="h-32 w-32 object-cover border-4 border-[#8B5A2B] rounded-full shadow-lg parchment"
-            style={{
-              borderRadius: '255px 15px 225px 15px / 15px 225px 15px 255px',
-              boxShadow: '5px 5px 0px rgba(66, 50, 36, 0.2)'
-            }}
-          />
+          <picture>
+            <source srcSet={webpImage} type="image/webp" />
+            <img
+              src={pngImage}
+              alt="Rui Diao"
+              className="h-32 w-32 object-cover border-4 border-[#8B5A2B] rounded-full shadow-lg parchment"
+              style={{
+                borderRadius: '255px 15px 225px 15px / 15px 225px 15px 255px',
+                boxShadow: '5px 5px 0px rgba(66, 50, 36, 0.2)'
+              }}
+            />
+          </picture>
         </div>
         <h1 className="mt-8 text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-[#423224] heading-readable">
           Rui Diao
