@@ -84,8 +84,8 @@ export const PROJECTS: Project[] = [
   },
   {
     title: 'QuoteSearch',
-    description: 'A serverless, private, semantic search engine for over 400,000 quotes. It runs entirely in your browser using Transformers.js, demonstrating the power and privacy of on-device AI.',
-    tech: ['Web AI', 'Transformers.js', 'React', 'Tailwind CSS'],
+    description: 'A serverless, private, semantic search engine for over 400,000 quotes. Embeddings are precomputed offline with model2vec; search runs entirely in your browser with a tiny static model — no server, no data leaves your device.',
+    tech: ['Web AI', 'model2vec', 'Web Worker', 'Tailwind CSS'],
     primaryLink: { url: 'https://huggingface.co/spaces/ruidiao/QuoteSearch', label: 'Try It' },
     links: [
       { url: 'https://ruidiao.substack.com/p/i-built-a-serverless-ai-search-engine?r=j5yr6&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true', label: 'Read the Story' },
