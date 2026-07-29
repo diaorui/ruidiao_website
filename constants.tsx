@@ -48,6 +48,18 @@ export const ARTICLES: Article[] = [
 
 export const PROJECTS: Project[] = [
   {
+    title: 'Bibliorecs',
+    description: 'Personalized book recommendation engine and library account manager built on the Bibliocommons library catalog API. Supports Santa Clara City/County, San Jose, Sunnyvale, and Palo Alto libraries.',
+    tech: ['Python', 'Flask', 'model2vec', 'Bibliocommons API'],
+    primaryLink: { url: 'https://github.com/diaorui/bibliorecs', label: 'GitHub' },
+  },
+  {
+    title: 'KidDeck',
+    description: 'Plugin-based controller for kids\' media. Audio stories, YouTube casting, alarms — all controllable from your phone browser.',
+    tech: ['Python', 'FastAPI', 'SSH', 'Chromecast', 'Deno'],
+    primaryLink: { url: 'https://github.com/diaorui/kid-deck', label: 'GitHub' },
+  },
+  {
     title: 'PeekDeck',
     description: 'A flexible dashboard generator that transforms YAML configurations into beautiful, static HTML dashboards. Monitor crypto prices, AI news, and more.',
     tech: ['Python', 'Jinja2', 'GitHub Actions', 'YAML'],
@@ -68,15 +80,6 @@ export const PROJECTS: Project[] = [
     links: [
       { url: 'https://github.com/diaorui/event-sync', label: 'GitHub' },
       { url: 'https://calendar.google.com/calendar/u/0?cid=OWRiNDRjYTA0NGUwM2JjOTA2ZGQ3YzVmMWIwY2Y4MTRmNjliMDc4MGY2Mzc2M2I4ODEwZGIwNjdkY2VjNGM4YkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t', label: 'Example: SV AI Events' },
-    ],
-  },
-  {
-    title: 'NanoCoffee',
-    description: 'A Chrome extension that brings AI-powered features to social media. All processing happens on your device with no backend servers required.',
-    tech: ['Chrome Extension', 'Gemini Nano', 'On-device AI', 'JavaScript'],
-    primaryLink: { url: 'https://nanocoffee.ruidiao.dev', label: 'Website' },
-    links: [
-      { url: 'https://chromewebstore.google.com/detail/nanocoffee/imociajlipjlmiglmjkpkjmkkfbblmhk', label: 'Chrome Store' },
     ],
   },
   {
