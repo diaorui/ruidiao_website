@@ -4,10 +4,11 @@ import Hero from './components/Hero';
 import Section from './components/Section';
 import AboutMe from './components/AboutMe';
 import ArticleCard from './components/ArticleCard';
+import PaperList from './components/PaperList';
 import ProjectCard from './components/ProjectCard';
 import Footer from './components/Footer';
 import { GoogleAnalytics } from './components/GoogleAnalytics';
-import { ARTICLES, PROJECTS, SOCIAL_LINKS } from './constants';
+import { ARTICLES, PAPERS, PROJECTS, SOCIAL_LINKS } from './constants';
 import type { Article, Project, SocialLink } from './types';
 
 const App: React.FC = () => {
@@ -20,6 +21,10 @@ const App: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-12 pt-8">
           <Section title="About Me">
             <AboutMe />
+          </Section>
+
+          <Section title="Research">
+            <PaperList papers={PAPERS} />
           </Section>
 
           <Section title="Writings" isWritings={true}>

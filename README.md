@@ -1,10 +1,10 @@
 # Rui Diao's Personal Website
 
-This is the source code for my personal website, built to share my journey as an indie creator after a decade at Google. The website showcases my writings, projects, and thoughts on technology and life.
+This is the source code for my personal website. It records a Ph.D. in mathematical optimization, a decade at Google, and the current chapter as an indie creator. The site showcases research, writings, and projects.
 
 ## About Me
 
-After a decade as a Senior Staff Software Engineer at Google, I'm now an indie creator focused on building a life centered around freedom, curiosity, and craft. This website is a living document of that journey.
+I completed a Ph.D. in mathematical optimization at the Chinese Academy of Sciences in 2014, advised by Yu-Hong Dai. After a decade as a Senior Staff Software Engineer at Google, I'm now an indie creator focused on building a life centered around freedom, curiosity, and craft. This website is a living document of that journey.
 
 ## Tech Stack
 
@@ -37,9 +37,10 @@ The analytics script is automatically loaded by the `GoogleAnalytics` component 
 
 ## Social Links
 
-*   **X:** [https://x.com/ruidiaox](https://x.com/ruidiaox)
+*   **X:** [https://x.com/ruidiao](https://x.com/ruidiao)
 *   **LinkedIn:** [https://linkedin.com/in/ruidiao](https://linkedin.com/in/ruidiao)
 *   **Substack:** [https://ruidiao.substack.com](https://ruidiao.substack.com)
+*   **Google Scholar:** [https://scholar.google.com/citations?user=OrSPeVsAAAAJ](https://scholar.google.com/citations?user=OrSPeVsAAAAJ)
 
 ## Acknowledgements
 

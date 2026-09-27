@@ -13,6 +13,17 @@ export interface Article {
   url: string;
 }
 
+export interface Paper {
+  title: string;
+  authors: string;
+  venue: string;
+  url: string;
+  links?: Array<{
+    url: string;
+    label: string;
+  }>;
+}
+
 export interface Project {
   title: string;
   description: string | React.ReactNode;

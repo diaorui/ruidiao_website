@@ -1,6 +1,6 @@
 
 import React from 'react';
-import type { SocialLink, Article, Project } from './types';
+import type { SocialLink, Article, Paper, Project } from './types';
 
 const XIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
@@ -20,6 +20,14 @@ const SubstackIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   </svg>
 );
 
+const ScholarIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
+  <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+    <path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
+  </svg>
+);
+
+export const SCHOLAR_URL = 'https://scholar.google.com/citations?user=OrSPeVsAAAAJ';
+
 const LinkIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
     <svg viewBox="0 0 20 20" fill="currentColor" {...props}>
         <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
@@ -28,9 +36,40 @@ const LinkIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
 );
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { name: 'X', url: 'https://x.com/ruidiaox', icon: <XIcon className="h-9 w-9 text-[#8B5A2B]" /> },
+  { name: 'X', url: 'https://x.com/ruidiao', icon: <XIcon className="h-9 w-9 text-[#8B5A2B]" /> },
   { name: 'LinkedIn', url: 'https://linkedin.com/in/ruidiao', icon: <LinkedInIcon className="h-9 w-9 text-[#8B5A2B]" /> },
   { name: 'Substack', url: 'https://ruidiao.substack.com', icon: <SubstackIcon className="h-9 w-9 text-[#8B5A2B]" /> },
+  { name: 'Google Scholar', url: SCHOLAR_URL, icon: <ScholarIcon className="h-9 w-9 text-[#8B5A2B]" /> },
+];
+
+export const PAPERS: Paper[] = [
+  {
+    title: 'Counterexamples for BFGS-type methods under arbitrary strong Wolfe constants',
+    authors: 'Sole author',
+    venue: 'arXiv:2609.09686, 2026',
+    url: 'https://arxiv.org/abs/2609.09686',
+    links: [
+      { url: 'https://github.com/diaorui/bfgs-wolfe-counterexample', label: 'Code' },
+    ],
+  },
+  {
+    title: 'Complexity analysis and algorithm design of pooling problem',
+    authors: 'with Yu-Hong Dai and Kai Fu',
+    venue: 'Journal of the Operations Research Society of China, 2018',
+    url: 'https://doi.org/10.1007/s40305-018-0193-7',
+  },
+  {
+    title: 'A new fully polynomial time approximation scheme for the interval subset sum problem',
+    authors: 'with Ya-Feng Liu and Yu-Hong Dai',
+    venue: 'Journal of Global Optimization, 2017',
+    url: 'https://doi.org/10.1007/s10898-017-0514-0',
+  },
+  {
+    title: 'An efficient inexact Newton-CG algorithm for the smallest enclosing ball problem of large dimensions',
+    authors: 'with Ya-Feng Liu, Feng Ye, and Hongwei Liu',
+    venue: 'Journal of the Operations Research Society of China, 2016',
+    url: 'https://doi.org/10.1007/s40305-015-0097-8',
+  },
 ];
 
 export const ARTICLES: Article[] = [

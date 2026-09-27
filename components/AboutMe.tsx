@@ -4,23 +4,38 @@ import React from 'react';
 const AboutMe: React.FC = () => {
   return (
     <div itemScope itemType="https://schema.org/AboutPage">
-      {/* Journey Timeline - Compact horizontal layout */}
-      <div className="flex items-center justify-between gap-4 mb-5 p-5 hand-drawn-card parchment">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-5 p-5 hand-drawn-card parchment">
         <div className="flex-1 text-center">
-          <p className="text-xs text-[#423224] font-bold uppercase tracking-wide mb-1">From</p>
-          <p className="text-lg font-bold text-[#423224]">Google</p>
-          <p className="text-sm text-[#423224]">10 years</p>
+          <p className="text-lg font-bold text-[#423224]">Ph.D.</p>
+          <p className="text-sm text-[#423224]">Chinese Academy of Sciences</p>
+          <p className="text-sm text-[#423224]">2014</p>
         </div>
 
-        <div className="flex-shrink-0">
-          <svg className="w-8 h-8 text-[#76C168]" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+        <div className="flex-shrink-0 flex justify-center" aria-hidden="true">
+          <svg className="w-8 h-8 text-[#76C168] sm:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+          <svg className="w-8 h-8 text-[#76C168] hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
           </svg>
         </div>
 
         <div className="flex-1 text-center">
-          <p className="text-xs text-[#423224] font-bold uppercase tracking-wide mb-1">To</p>
-          <p className="text-lg font-bold text-[#423224]">Indie Creator</p>
+          <p className="text-lg font-bold text-[#423224]">Google</p>
+          <p className="text-sm text-[#423224]">10+ years</p>
+        </div>
+
+        <div className="flex-shrink-0 flex justify-center" aria-hidden="true">
+          <svg className="w-8 h-8 text-[#76C168] sm:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+          </svg>
+          <svg className="w-8 h-8 text-[#76C168] hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          </svg>
+        </div>
+
+        <div className="flex-1 text-center">
+          <p className="text-lg font-bold text-[#423224]">Indie creator</p>
           <p className="text-sm text-[#423224]">Building freely</p>
         </div>
       </div>
@@ -52,7 +67,7 @@ const AboutMe: React.FC = () => {
       {/* Mission Statement - More condensed */}
       <div className="p-5 hand-drawn-card parchment">
         <p className="text-[#423224] text-base leading-relaxed text-readable" itemProp="description">
-          After a decade at Google, I'm now an indie creator <span className="text-[#5FACD3] font-bold">exploring ideas that excite me</span> and sharing the journey. Cultivating <span className="text-[#76C168] font-bold">curiosity, empathy, and courage</span> — finding signal in the noise.
+          I completed a Ph.D. in mathematical optimization at the Chinese Academy of Sciences in 2014, advised by Yu-Hong Dai. After a decade at Google, I'm now an indie creator <span className="text-[#5FACD3] font-bold">exploring ideas that excite me</span> and sharing the journey. Cultivating <span className="text-[#76C168] font-bold">curiosity, empathy, and courage</span> — finding signal in the noise.
         </p>
       </div>
     </div>
