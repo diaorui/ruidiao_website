@@ -39,6 +39,7 @@ The analytics script is automatically loaded by the `GoogleAnalytics` component 
 
 *   **X:** [https://x.com/ruidiao](https://x.com/ruidiao)
 *   **LinkedIn:** [https://linkedin.com/in/ruidiao](https://linkedin.com/in/ruidiao)
+*   **GitHub:** [https://github.com/diaorui](https://github.com/diaorui)
 *   **Substack:** [https://ruidiao.substack.com](https://ruidiao.substack.com)
 *   **Google Scholar:** [https://scholar.google.com/citations?user=OrSPeVsAAAAJ](https://scholar.google.com/citations?user=OrSPeVsAAAAJ)
 

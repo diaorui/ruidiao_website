@@ -38,7 +38,7 @@ const Hero: React.FC<HeroProps> = ({ socialLinks }) => {
           Indie Creator • Ex-Google Senior Staff Software Engineer
         </p>
 
-        <div className="flex items-center justify-center space-x-8 mt-8">
+        <div className="flex items-center justify-center gap-5 sm:gap-8 mt-8">
           {socialLinks.map((link) => (
             <a
               key={link.name}
